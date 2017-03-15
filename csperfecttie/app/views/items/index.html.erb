@@ -11,10 +11,11 @@
 
           <div class="col-md-2">
             <div class = "thumbnail">
-              <%= link_to image_tag(item.image_url, :size => '150'), item %>
+              <%= link_to image_tag(item.image_url), item %>
                 <div class="caption">
-                  <h3><%= item.name%></h3>
-                  <p>$<%= item.price %></p>
+                <p><%= item.name%></p>
+                <p><%= item.brand%></p>
+                <p>$<%= item.price%></p>             
                   <p>
                   <a href="#" class="btn btn-primary" role="button">View Item</a>
                   </p>

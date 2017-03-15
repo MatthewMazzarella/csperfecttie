@@ -22,7 +22,12 @@
     font-size:14px;
 }
 
-
+#left{
+    float: left;
+}
+#right{
+    float: right;
+}
 
 body {
     
@@ -114,8 +119,12 @@ h1{
 .container .store h3{
     font-size: 16px;
 }
-
-.container .store img {
+.container .store .thumbnail{
+    width: 160px;
+    height: 350px;
+    border: 1px solid #5492f7;
+}
+.container .store img{
     max-width: 150px;
     height: 150px;
 }
