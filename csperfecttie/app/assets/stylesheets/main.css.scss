@@ -1,21 +1,21 @@
 .navbar{
     border-top: 5px solid #5492f7;
     border-bottom: 1px solid #5492f7;
-	background: #fff;
+    background: #fff;
     display: block;
     font-color: #5492f7;
     text-align: center;
-	font-size: 14px;
+    font-size: 14px;
     font-family: Architect;
     text-decoration: none;
-	}
+    }
 
 #color{
-	color:#000;
+    color:#000;
 }
 
 #color:hover{
-	color:#5492f7;
+    color:#5492f7;
 }
 
 #lrcolor{
@@ -25,9 +25,8 @@
 
 
 body {
-	background: #FFF;
-
-}	
+    
+}   
 
 
 h1{
@@ -40,7 +39,7 @@ h1{
 }
 
 .row{
-	
+    
 }
 
 
@@ -102,10 +101,23 @@ h1{
     margin: 0 auto;
 }
 .col-md-4 h2 {
-	text-align: center;
+    text-align: center;
     color: #5492f7;
     font-size: 18px;
     text-transform: uppercase;
+}
+
+.container .store{
+    border: 2px solid #5492f7;
+}
+
+.container .store h3{
+    font-size: 16px;
+}
+
+.container .store img {
+    max-width: 150px;
+    height: 150px;
 }
 
 
@@ -115,5 +127,4 @@ h1{
 .form-group input:active, .form-group input:focus {
     border: 1px solid #5492f7;
 }
-
 
