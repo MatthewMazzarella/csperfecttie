@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :test2s
   resources :tests
   get 'register/index'
 
