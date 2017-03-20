@@ -1,0 +1,1 @@
+json.array! @ppages, partial: 'ppages/ppage', as: :ppage

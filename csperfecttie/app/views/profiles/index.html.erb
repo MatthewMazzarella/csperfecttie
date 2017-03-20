@@ -1,0 +1,78 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Profile</h1>
+
+<table>
+  <thead>
+    <tr>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <html>
+
+  <tbody>
+    <% @profiles.each do |profile| %>
+      <tr>
+        <div class="row">
+          <div class="col-md-3 contact">
+                  <div class="col-md-3 contact">
+        <h2>Name<h2>
+        <p><%= ppage.name %></p>
+        <h2>Address</h2>
+        <p><%= ppage.address %></p>
+        <h2>City</h2>
+        <p><%= ppage.city %></p>
+        <h2>State</h2>
+        <p><%= ppage.state %></p>
+        <h2>Zipcode</h2>
+        <p><%= ppage.zipcode %></p>
+        <h2>Email</h2>
+        <p><%= ppage.email %></p>
+        <h2>Method of communication</h2>
+        <p><%= ppage.methodofcom %></p>
+        <h2>Phone number</h2>
+        <p><%= ppage.phone %></p>
+        <h2>Suit size</h2>
+        <p><%= ppage.suitsize %></p>
+        <h2>Prefered color</h2>
+        <p><%= ppage.preferedcolor %></p>
+        <h2>Style preference</h2>
+        <p><%= ppage.style %></p>
+        <h2>Shirt size</h2>
+        <p><%= ppage.shirtsize %></p>
+        <h2>Shoe size</h2>
+        <p><%= ppage.shoesize %></p>
+        <h2>Hat size</h2>
+        <p><%= ppage.hatsize %></p>
+        <h2>Birthday</h2>
+        <p><%= ppage.birthday %></p>
+        <h2>Anniversary</h2>
+        <p><%= ppage.anniversary %></p>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-md-3 contact">
+                  <div class="col-md-3 contact">
+        <h2>Order number</h2>
+        <p><%= ppage.ordernumber %></p>
+        <h2>Order details</h2>
+        <p><%= ppage.orderdetails %></p>
+        <h2>Cost</h2>
+        <p><%= ppage.cost %></p>
+      </div>
+    </div>
+  </div>
+      </div>
+
+  <!--      <td><%= link_to 'Show', ppage %></td> -->
+        <td><%= link_to 'Edit Profile', edit_ppage_path(ppage) %></td>
+      <!--  <td><%= link_to 'Destroy', ppage, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</html>
+<br>
+
+ <%= link_to 'Create account', new_ppage_path %>

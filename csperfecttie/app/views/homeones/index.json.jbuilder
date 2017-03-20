@@ -1,0 +1,1 @@
+json.array! @homeones, partial: 'homeones/homeone', as: :homeone

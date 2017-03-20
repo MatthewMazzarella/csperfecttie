@@ -2,39 +2,26 @@
 
 <h1>Items</h1>
 
-<div class="container store">
-
-
-  <div class="row">
-
-    <% @items.each do |item| %>
-
-          <div class="col-md-2">
-            <div class = "thumbnail">
-              <%= link_to image_tag(item.image_url), item %>
-                <div class="caption">
-                <p><%= item.name%></p>
-                <p><%= item.brand%></p>
-                <p>$<%= item.price%></p>             
-                  <p>
-                  <a href="#" class="btn btn-primary" role="button">View Item</a>
-                  </p>
-                  
-                  <td><%= link_to 'Show ', item %></td>
-                  <td><%= link_to 'Edit ', edit_item_path(item) %></td>
-                   <td><%= link_to 'Destroy ', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-
-                </div>
-          </div>
-
-    </div>
-  <%end%>
-  </div>
-</div>
-
-<br>
-
-<%= link_to 'New Item', new_item_path %>
+<table >
+  <tbody>
+    <tr>
+      <% @items.each do |item| %>
+        <div class="col-md-4">
+          <td>
+            <div class = "image", style: "max-height: 150px;">
+              <%= link_to image_tag(item.image_url, :size => '260x180'), item %>
+            </div>
+            <div><%= item.brand %> <%= item.name %></div>
+            <div>$<%= item.price %></div>
+            <%= link_to 'Show ', item %>
+            <%= link_to 'Edit ', edit_item_path(item) %>
+            <%= link_to 'Destroy ', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </td>
+        </div>
+          <% end %>
+    </tr>
+  </tbody>
+</table>
 
 
 <!--

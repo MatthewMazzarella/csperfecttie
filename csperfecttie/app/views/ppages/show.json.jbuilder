@@ -1,0 +1,1 @@
+json.partial! "ppages/ppage", ppage: @ppage

@@ -1,0 +1,2 @@
+class Homeone < ApplicationRecord
+end
