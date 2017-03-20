@@ -13,13 +13,13 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: perfect
-  password: password
-  socket: /var/run/mysqld/mysqld.sock
+  username: mazz
+  password: xxxxxx
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default
-  database: perfect_development
+  database: projectboots_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
