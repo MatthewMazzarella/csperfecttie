@@ -1,2 +1,0 @@
-class Homeone < ApplicationRecord
-end

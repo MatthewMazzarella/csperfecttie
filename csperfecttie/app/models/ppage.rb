@@ -1,2 +1,0 @@
-class Ppage < ApplicationRecord
-end
