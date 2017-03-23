@@ -1,0 +1,1 @@
+json.array! @prpages, partial: 'prpages/prpage', as: :prpage

@@ -1,0 +1,1 @@
+json.partial! "prpages/prpage", prpage: @prpage

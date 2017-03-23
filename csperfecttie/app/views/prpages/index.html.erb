@@ -1,0 +1,78 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Profile</h1>
+
+<table>
+  <thead>
+    <tr>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <html>
+
+  <tbody>
+    <% @prpages.each do |prpage| %>
+      <tr>
+        <div class="row">
+          <div class="col-md-3 contact">
+                  <div class="col-md-3 contact">
+        <h2>Name<h2>
+        <p><%= prpage.name %></p>
+        <h2>Address</h2>
+        <p><%= prpage.address %></p>
+        <h2>City</h2>
+        <p><%= prpage.city %></p>
+        <h2>State</h2>
+        <p><%= prpage.state %></p>
+        <h2>Zipcode</h2>
+        <p><%= prpage.zipcode %></p>
+        <h2>Email</h2>
+        <p><%= prpage.email %></p>
+        <h2>Method of communication</h2>
+        <p><%= prpage.methodofcom %></p>
+        <h2>Phone number</h2>
+        <p><%= prpage.phone %></p>
+        <h2>Suit size</h2>
+        <p><%= prpage.suitsize %></p>
+        <h2>Prefered color</h2>
+        <p><%= prpage.preferedcolor %></p>
+        <h2>Style preference</h2>
+        <p><%= prpage.style %></p>
+        <h2>Shirt size</h2>
+        <p><%= prpage.shirtsize %></p>
+        <h2>Shoe size</h2>
+        <p><%= prpage.shoesize %></p>
+        <h2>Hat size</h2>
+        <p><%= prpage.hatsize %></p>
+        <h2>Birthday</h2>
+        <p><%= prpage.birthday %></p>
+        <h2>Anniversary</h2>
+        <p><%= prpage.anniversary %></p>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-md-3 contact">
+                  <div class="col-md-3 contact">
+        <h2>Order number</h2>
+        <p><%= prpage.ordernumber %></p>
+        <h2>Order details</h2>
+        <p><%= prpage.orderdetails %></p>
+        <h2>Cost</h2>
+        <p><%= prpage.cost %></p>
+      </div>
+    </div>
+  </div>
+      </div>
+
+  <!--      <td><%= link_to 'Show', prpage %></td> -->
+        <td><%= link_to 'Edit Profile', edit_prpage_path(prpage) %></td>
+      <!--  <td><%= link_to 'Destroy', prpage, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</html>
+<br>
+
+ <%= link_to 'Create account', new_prpage_path %>

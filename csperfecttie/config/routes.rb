@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+  resources :prpages
+  resources :homepages
   resources :test2s
   resources :tests
   get 'register/index'
-
+  get 'homepages' => 'homepages#index'
   get 'login/index'
-
+  get 'posts' => 'posts#index'
+  get 'prpages' => 'prpages#index'
   get 'contact' => 'contact#index'
 
   get 'register' => 'register#index'
