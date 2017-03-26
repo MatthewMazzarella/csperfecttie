@@ -13,12 +13,10 @@
             <div class = "thumbnail">
               <%= link_to image_tag(item.image_url), item %>
                 <div class="caption">
-                <p><%= item.name%></p>
-                <p><%= item.brand%></p>
-                <p>$<%= item.price%></p>             
-                  <p>
-                  <a href="#" class="btn btn-primary" role="button">View Item</a>
-                  </p>
+                  <p><%= item.name%></p>
+                  <p><%= item.brand%></p>
+                  <p>$<%= item.price%></p>             
+                  <p><a href="#" class="btn btn-primary" role="button">View Item</a></p>
                   
                   <td><%= link_to 'Show ', item %></td>
                   <td><%= link_to 'Edit ', edit_item_path(item) %></td>
