@@ -13,21 +13,21 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: spreetestadmin
-  password: password
-  socket: /var/run/mysqld/mysqld.sock
+  username: mazz
+  password: xxxxxx
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default
-  database: spreetest
+  database: projectboots_development
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: spreetest
-  username: spreetestadmin
-  password: password
+  database: projectboots_test
+  username: mazz
+  password: xxxxxx
 
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -51,6 +51,6 @@ test:
 #
 production:
   <<: *default
-  database: csperfecttiespree_production
-  username: csperfecttiespree
+  database: projectboots_production
+  username: projectboots
   password: <%= ENV['CSPERFECTTIESPREE_DATABASE_PASSWORD'] %>
