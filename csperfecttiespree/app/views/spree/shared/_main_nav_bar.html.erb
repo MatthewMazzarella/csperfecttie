@@ -1,7 +1,12 @@
 <nav class="col-md-12">
   <div id="main-nav-bar" class="navbar">
     <ul class="nav navbar-nav" data-hook>
-      <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
+      <li id="home-link" data-hook><%= link_to Spree.t(:home), '/welcome' %></li>
+      <li id="store-link" data-hook><%= link_to Spree.t(:store), spree.root_path %></li>
+      <li id="contact-link" data-hook><%= link_to Spree.t(:contact), '/contact' %></li>
+
+
+
     </ul>
     <ul class="nav navbar-nav navbar-right" data-hook>
       <li id="link-to-cart" data-hook>
@@ -11,10 +16,7 @@
         &nbsp;
       </li>
       <li id="link-to-account" data-hook>
-        <%= link_to Spree.t(:my_account), '/account' %>
-      </li>
-      <li id="link-to-login" data-hook>
-        <%= link_to Spree.t(:login), '/login' %>
+        <%= render :partial => 'spree/shared/login_bar'%>
       </li>
       <script>Spree.fetch_cart()</script>
     </ul>
