@@ -1,0 +1,58 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+
+**********************
+*HEY PEOPLE DOWN HERE*
+**********************
+This is just a default spree application set up using mysql
+nothing has been edited. You will need to edit the database.yml like normal:
+
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: spreetestadmin 				****Change if needed
+  password: password	   				****Change if needed
+  socket: /var/run/mysqld/mysqld.sock	****Change if needed
+  
+development:
+  <<: *default
+  database: spreetest					****Change if needed
+  
+test:
+  <<: *default
+  database: spreetest					****Change if needed
+  username: spreetestadmin				****Change if needed
+  password: password					****Change if needed
+  
+  
+Get shit to work ya know?
+

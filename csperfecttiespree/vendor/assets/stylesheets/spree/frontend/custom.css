@@ -1,0 +1,38 @@
+.navbar-brand {
+	color: #000;
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px;
+}
+.navbar-brand :hover {
+color:#5492f7;
+}
+
+.navbar-form {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 5px 10px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#spree-header #header {
+
+	background: #fff;
+  	padding: 5px 0;
+    border-top: 5px solid #5492f7;
+    border-bottom: 1px solid #5492f7;
+}
+
+#spree-header .nav a{
+    color:#000;
+}
+
+#spree-header .nav a:hover{
+    color:#5492f7;
+    background: #fff;
+}
