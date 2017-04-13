@@ -18,15 +18,21 @@
               <li id="store-link" data-hook>
                 <%= link_to Spree.t(:Back_to_Store), spree.root_path %>
               </li>
+
               <li id="link-to-account" data-hook>
-                <%= render :partial => 'spree/shared/login_bar'%>
+                <%= link_to Spree.t(:logout), spree.logout_path %>
               </li>
+
+              <li>
+              <%= link_to Spree.t(:my_account), spree.account_path %>
+                </li>
               </div>
             </div>
           </div>
         <% end %>
       </div>
     </div>
+
   </nav>
 
 </header>

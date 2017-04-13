@@ -1,4 +1,5 @@
 <% admin = try_spree_current_user.try(:has_spree_role?, "admin") %>
+
 <nav class="col-md-12">
   <div id="main-nav-bar" class="navbar">
     <ul class="nav navbar-nav" data-hook>
@@ -20,11 +21,13 @@
         <%= render :partial => 'spree/shared/login_bar'%>
       </li>
       <script>Spree.fetch_cart()</script>
+
           <% if admin %>
             <li class="link-to-admin">
-              <%= tab *Spree::BackendConfiguration::ORDER_TABS, icon: 'shopping-cart' %>
+              <%= link_to Spree.t(:admin_page), '/admin' %>
             </li>
           <% end %>
+
     </ul>
 
   </div>
