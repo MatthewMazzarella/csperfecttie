@@ -7,17 +7,18 @@
     height: 50px;
 }
 .navbar-brand :hover {
-color:#5492f7;
+    color:#5492f7;
+    text-decoration: none;
 }
 
 .navbar-form {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 5px 10px;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  margin-top: 8px;
-  margin-bottom: 8px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 5px 10px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 #spree-header #header {
@@ -49,18 +50,30 @@ color:#5492f7;
     text-decoration: none;
     }
 
-.sidebar-toggle{
-    color: #000;
-}    
-.navbar-right {
-    color: #000; !important
+.anav{
+    float: right;
+    display: block;
+    font-color: #5492f7;
+    text-align: center;
+    font-size: 14px;
+    font-family: Architect;
+    background: #fff;
+}
+.anav li{
+    
+    float: right;
+    margin-left: -15px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
-.glyphicon-user{
+.anav li :hover{
     color: #000;
-}
-.caret{
-    color: #000;
+    text-decoration: none;
 }
 
 #color{
