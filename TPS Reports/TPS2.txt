@@ -1,0 +1,139 @@
+﻿T.P.S REPORT 
+        Coversheet
+
+
+Prepared by:Stephen Betcher, Sean Hulway, Joe Mangas, Matt Mazzarella        Date: 1/16/17
+
+
+System: Mac/Windows Language: HTML/Ruby on Rails   
+
+
+Customer :Clarence Gardner, C’s Perfect Tie        
+
+
+Due Date:          Approved by : John Kapenga 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+task
+	time
+	risk
+	person
+	actual time 
+
+
+	%done
+	Code review
+	Write  abstract rough draft
+	1 hour 
+	low
+	Stephen, 
+	  1 hour
+	 100
+	
+
+	Setup project scaffolding
+	4 hours
+	medium
+	Matt
+	
+
+	 
+	 
+	Further rails research/ spikes
+	2 weeks
+	medium
+	Stephen, Matt, Joe, Sean
+	 2 hours
+	 
+	 
+	Finish Amazon Web service setup
+	3 hours
+	medium
+	Matt, Stephen
+	30 min
+	 20%
+	
+
+	Finish homepage and connected pages setup
+	1 week
+	medium
+	Stephen,Matt, Sean, Joe
+	 2 hours
+	
+
+	
+
+	Fix version control bugs
+	1 hour
+	low
+	Stephen, Joe, Matt, Sean
+	 5min
+	 90%
+	
+
+	
+
+	1 week
+	medium
+	Stephen,Matt
+	3 day
+	45%
